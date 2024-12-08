@@ -10,13 +10,13 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class AgendaController
  */
-@WebServlet("/AgendaController")
+@WebServlet(urlPatterns = {"/AgendaController", "/main"})
 public class AgendaController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
  
     public AgendaController() {
         super();
-        }
+    }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
